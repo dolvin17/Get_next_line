@@ -6,13 +6,15 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 03:17:21 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/05/19 05:14:36 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/05/25 21:32:07 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line.h"
+
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -23,8 +25,8 @@ size_t	ft_strlen(const char *s)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*new;
-	unsigned long	i;
-	unsigned long	j;
+	int				i;
+	int				j;
 
 	i = 0;
 	j = 0;
