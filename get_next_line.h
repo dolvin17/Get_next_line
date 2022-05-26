@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 03:17:27 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/05/25 21:32:03 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/05/26 21:34:20 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@
 /* libft functions */
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int __c);
 
 /* new functions */
 char	*get_next_line(int fd);
-void	read_buf(int fd, char *buf);
+int		read_buffer(int fd, char *dest);
 #endif

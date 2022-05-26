@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 03:17:21 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/05/25 21:32:07 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/05/26 20:33:58 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,18 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	new[i] = '\0';
 	return (new);
+}
+
+char	*ft_strchr(const char *s, int __c)
+{
+	char	c;
+
+	c = __c;
+	while (*s != c)
+	{
+		if (*s == '\0')
+			return (0);
+		s++;
+	}
+	return ((char *)s);
 }
