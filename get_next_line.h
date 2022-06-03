@@ -6,7 +6,7 @@
 /*   By: ghuertas <ghuertas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 03:17:27 by ghuertas          #+#    #+#             */
-/*   Updated: 2022/05/26 21:34:20 by ghuertas         ###   ########.fr       */
+/*   Updated: 2022/06/03 17:33:34 by ghuertas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ char	*ft_strchr(const char *s, int __c);
 
 /* new functions */
 char	*get_next_line(int fd);
-int		read_buffer(int fd, char *dest);
+int		read_buffer(int fd, char **storage);
 #endif
